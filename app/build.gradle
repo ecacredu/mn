@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+  signingConfigs {
+    debug {
+      keyAlias 'androiddebugkey'
+      keyPassword 'android'
+      storeFile file('C:/Users/sd/.android/debug.keystore')
+      storePassword 'android'
+    }
+    releaseconfig {
+      keyAlias 'ace'
+      keyPassword 'nagarsevak123'
+      storeFile file('D:/mynagarsevak/mynagarsevak.keystore')
+      storePassword 'nagarsevak123'
+    }
+  }
+  compileSdkVersion 25
+  buildToolsVersion "25.0.0"
+  defaultConfig {
+    applicationId "com.mynagarsevak"
+    minSdkVersion 16
+    targetSdkVersion 25
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    manifestPlaceholders = [onesignal_app_id: "40f6b993-c016-42d1-90f5-7c5670d27325",
+                            // Project number pulled from dashboard, local value is ignored.
+                            onesignal_google_project_number: "455743016876"]
+  }
+  buildTypes {
+    release {
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      signingConfig signingConfigs.releaseconfig
+      zipAlignEnabled true
+    }
+    debug {
+      signingConfig signingConfigs.debug
+    }
+  }
+}
+
+dependencies {
+  compile fileTree(include: ['*.jar'], dir: 'libs')
+  androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    exclude group: 'com.android.support', module: 'support-annotations'
+  })
+  compile 'com.android.support:appcompat-v7:25.3.1'
+  compile 'com.android.support:design:25.3.1'
+  compile 'com.android.support:recyclerview-v7:25.3.1'
+  compile 'com.android.support:cardview-v7:25.3.1'
+  testCompile 'junit:junit:4.12'
+  compile 'com.android.support.constraint:constraint-layout:1.0.2'
+  compile 'com.github.devlight.navigationtabstrip:navigationtabstrip:1.0.4'
+  compile 'com.google.firebase:firebase-database:10.2.1'
+  compile 'com.firebaseui:firebase-ui-database:1.2.0'
+  compile 'com.onesignal:OneSignal:3.+@aar'
+  compile 'com.google.firebase:firebase-storage:10.2.1'
+  compile 'com.google.firebase:firebase-auth:10.2.1'
+  compile 'com.google.android.gms:play-services-auth:10.2.1'
+  compile 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+  compile 'com.rengwuxian.materialedittext:library:2.1.4'
+  compile 'com.github.jrvansuita:PickImage:+'
+  compile 'com.github.curioustechizen.android-ago:library:1.3.3'
+  compile 'com.facebook.android:account-kit-sdk:4.+'
+  compile('com.weiwangcn.betterspinner:library-material:1.1.0') {
+    exclude group: 'com.android.support', module: 'appcompat-v7'
+    exclude group: 'com.rengwuxian.materialedittext', module: 'library'
+  }
+  compile 'com.github.bumptech.glide:glide:3.7.0'
+  //noinspection GradleCompatible
+  compile 'com.android.support:support-v4:19.1.0'
+  compile 'com.google.android.gms:play-services-gcm:10.2.1'
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:padding="16dp"
+  android:layout_margin="16dp"
+  android:background="#EFF4F5"
+  android:orientation="vertical">
+
+  <!--<LinearLayout-->
+    <!--android:layout_width="350dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:text="Post Your Issue"-->
+      <!--android:textSize="24sp"-->
+      <!--android:textStyle="normal" />-->
+
+    <!--<View-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_marginTop="5dp"-->
+      <!--android:layout_height="1dp"-->
+      <!--android:background="#666"/>-->
+
+    <!--<LinearLayout-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_marginTop="10dp"-->
+      <!--android:weightSum="1">-->
+
+      <!--<Space-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight=".25"/>-->
+
+      <!--<ImageButton-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight=".5"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:src="@drawable/placeholder" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:text="+ Add Photo"-->
+      <!--android:textAlignment="center"-->
+      <!--android:layout_marginTop="5dp"-->
+      <!--android:layout_marginBottom="5dp" />-->
+
+    <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+      <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+      <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+      <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+      <!--&lt;!&ndash;android:layout_marginBottom="5dp"&ndash;&gt;-->
+      <!--&lt;!&ndash;android:hint="Title" />&ndash;&gt;-->
+
+    <!--<com.rengwuxian.materialedittext.MaterialEditText-->
+      <!--android:id="@+id/issue_title"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_marginTop="5dp"-->
+      <!--android:layout_marginBottom="5dp"-->
+      <!--app:met_floatingLabelTextSize="13sp"-->
+      <!--app:met_floatingLabel="normal"-->
+      <!--android:hint="Title"/>-->
+
+    <!--<com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner-->
+      <!--android:id="@+id/issue_society1"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:focusableInTouchMode="false"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_marginTop="5dp"-->
+      <!--android:layout_marginBottom="5dp"-->
+      <!--android:hint="Select Society" />-->
+
+    <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+      <!--&lt;!&ndash;android:id="@+id/issue_society"&ndash;&gt;-->
+      <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+      <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+      <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+      <!--&lt;!&ndash;android:layout_marginBottom="5dp"&ndash;&gt;-->
+      <!--&lt;!&ndash;android:hint="Title" />&ndash;&gt;-->
+
+    <!--<EditText-->
+      <!--android:id="@+id/issue_area"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:layout_marginTop="5dp"-->
+      <!--android:layout_marginBottom="5dp"-->
+      <!--android:hint="Title" />-->
+
+    <!--<EditText-->
+      <!--android:id="@+id/issue_description"-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content"-->
+      <!--android:minLines="3"-->
+      <!--android:layout_marginTop="5dp"-->
+      <!--android:layout_marginBottom="5dp"-->
+      <!--android:hint="Title" />-->
+
+  <!--</LinearLayout>-->
+
+
+
+</LinearLayout>

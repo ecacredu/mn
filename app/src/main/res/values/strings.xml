@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">My Nagarsevak</string>
+  <string name="title_activity_post_issue">PostIssueActivity</string>
+  <string name="FACEBOOK_APP_ID">654322534759476</string>
+  <string name="ACCOUNT_KIT_CLIENT_TOKEN">48fa36ddefdbccf593ea53b2c330bc14</string>
+  <string name="title_activity_user_details">UserDetails</string>
+  <string name="title_activity_chat">ChatActivity</string>
+</resources>

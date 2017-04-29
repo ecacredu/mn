@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/chat_recycler_layout"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="?android:attr/selectableItemBackground"
+  android:clickable="true"
+  android:orientation="horizontal"
+  android:paddingBottom="@dimen/padding_small"
+  android:paddingEnd="@dimen/padding_avg"
+  android:paddingStart="@dimen/padding_avg"
+  android:paddingTop="@dimen/padding_small">
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/msgWrapLayout"
+    android:elevation="1dp"
+    android:layout_marginStart="@dimen/margin_small"
+    android:layout_marginLeft="@dimen/margin_small"
+    android:padding="@dimen/padding_small"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/text_view_chat_message"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      tools:text="My message !" />
+
+    <TextView
+      android:id="@+id/text_view_chat_time"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_gravity="right"
+      tools:text="00:00" />
+  </LinearLayout>
+
+
+
+  <!--android:layout_toStartOf="@+id/text_view_user_alphabet"-->
+  <!--<TextView-->
+    <!--android:id="@+id/text_view_user_alphabet"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_marginStart="@dimen/margin_avg"-->
+    <!--android:layout_marginLeft="@dimen/margin_avg"-->
+    <!--android:gravity="center"-->
+    <!--android:maxEms="1"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--android:textStyle="bold"-->
+    <!--tools:text="a"-->
+    <!--android:layout_alignParentRight="true" />-->
+
+</RelativeLayout>
